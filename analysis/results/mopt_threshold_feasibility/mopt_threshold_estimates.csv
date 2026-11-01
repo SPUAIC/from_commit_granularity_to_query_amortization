@@ -1,0 +1,4 @@
+table_format,target_role,target_file_size_mib,conditional_mopt_star,mopt_star_ci_low,mopt_star_ci_high,mopt_star_ci_method,finite_bootstrap_draws,finite_jackknife_draws,extrapolation_factor_above_tested_max_mopt,inside_tested_mopt_range,classification
+iceberg,native_512_mib,512.0,134317128.7870223,134317128.7870223,134317128.7870223,BCA,10000,36,52.46762843243058,False,MODEL_EXTRAPOLATION
+delta,harmonized_512_mib,512.0,134723073.03576475,134723073.03576475,134723073.03576475,BCA,10000,36,52.62620040459561,False,MODEL_EXTRAPOLATION
+delta,native_1024_mib,1024.0,269469976.9074691,269469976.9074691,269469976.9074691,BCA,10000,36,105.26170972948012,False,MODEL_EXTRAPOLATION

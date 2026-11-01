@@ -1,0 +1,8 @@
+sequence,label,node_id,fill_color
+1,TPC-DS store_sales in Kafka,source,#EAF2F8
+2,Spark Structured Streaming; MOPT upper bound,streaming,#E8F6F3
+3,Format-specific transactional sink,sink,#FDF2E9
+4,Active Parquet files and retained metadata,state,#F4ECF7
+5,Pre-maintenance Q1-Q3,query_pre,#F7F7F7
+6,Native maintenance,maintenance,#FFF4D6
+7,Post-maintenance Q1-Q3,query_post,#F7F7F7

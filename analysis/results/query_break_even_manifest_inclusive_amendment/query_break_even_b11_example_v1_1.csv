@@ -1,0 +1,2 @@
+table_format,scenario,scale_factor,mopt,query_id,maintenance_boundary,break_even_query_executions,break_even_ci_low,break_even_ci_high,break_even_ci_method
+iceberg,B11,500,640000,Q2,rewrite_data_files_plus_rewrite_manifests,46.33862236822855,19.97606864274571,92.38429277767968,BCA

@@ -1,0 +1,7 @@
+label,start_sequence,end_sequence,level,color
+Complete Spark trigger duration (end-to-end),2,4,1,#4D4D4D
+Append interval,2.5499999999999998,4,2,#0072B2
+Collector instrumentation occurs inside the trigger,2.1499999999999999,3.8999999999999999,3,#A65E00
+Query wall time,5,5,1,#4D4D4D
+Native maintenance wall time,6,6,1,#4D4D4D
+Query wall time,7,7,1,#4D4D4D

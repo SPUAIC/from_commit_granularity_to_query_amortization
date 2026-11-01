@@ -1,0 +1,225 @@
+{
+  "method_version": "publication_mopt_threshold_feasibility_v1_0",
+  "generated_at_utc": "2026-10-25T17:17:45.780512Z",
+  "analysis_type": "conditional_mopt_threshold_feasibility_not_optimization_or_cost",
+  "bootstrap_seed": 20261025,
+  "bootstrap_draws": 10000,
+  "tested_mopt_range": [
+    160000,
+    2560000
+  ],
+  "output_partitions": 12,
+  "specification_hashes": {
+    "publication_final_statistical_analysis_specification_v1.0.md": "0fee90c74eb0160a579f945dab5d7d46ebb8e1f2254171e3c4a515426d40b461",
+    "publication_final_statistical_analysis_specification_v1.0.yaml": "c399b574389603eb0516164ed1aba8cbeda9e2c80880c1cf5f90eb28b8a009ae"
+  },
+  "canonical_manifest_hash": "afaf04a6231035a1df4397a73d2f1cf45cf3271dbca18b001eb41f0b1f6830e2",
+  "analysis_script_hash": "a86c918c0f6fc2e5fdc8eff31b8f37a367b1205dea99bc8efcaeb69487db1beb",
+  "helper_script_hash": "33b39736d2f5fe81f3813f78c75159e797e4512c4b756b466ce3d0e07b6e593e",
+  "input_hashes": {
+    "publication_final_statistical_analysis_specification_v1.0.md": "0fee90c74eb0160a579f945dab5d7d46ebb8e1f2254171e3c4a515426d40b461",
+    "publication_final_statistical_analysis_specification_v1.0.yaml": "c399b574389603eb0516164ed1aba8cbeda9e2c80880c1cf5f90eb28b8a009ae",
+    "publication_canonical_run_manifest.csv": "afaf04a6231035a1df4397a73d2f1cf45cf3271dbca18b001eb41f0b1f6830e2",
+    "iceberg_metrics_exports_20261024\\metrics_ingestion.csv": "237c3eb716e75d36ed71ffeb91d30bb706a47cf40ba03a9827083f8bb5dfaf52",
+    "iceberg_metrics_exports_20261024\\query_metrics.csv": "6bc776a1948b3b29fed5648a80d195b6aa87d3b13208afc27f45ba7a7cdec043",
+    "iceberg_metrics_exports_20261024\\compaction_operation_metrics.csv": "d80265f4ce5062376ebfc0bf192144a9315fa1868790e81008efa8e2cf3b871f",
+    "delta_metrics_exports_20261024\\metrics_ingestion.csv": "6c3c46d2047f32376c4a6cb489f70ee607644f07a428fd76e5c47f0e0399b07d",
+    "delta_metrics_exports_20261024\\query_metrics.csv": "240a8b1f71ba62591689f1425c32262696566581539187880af45ecd5080a345",
+    "delta_metrics_exports_20261024\\compaction_operation_metrics.csv": "b267a59b994bd6a7654ce2bfbb6d7a147a37f01922691c804b182ed743294e79",
+    "delta_metrics_exports_20261024\\metrics_ingestion_phases_reconstruction_quality.csv": "deb3d2ed4e258684f46ec8aa589ade44318de7f3300c6e0d0b04bc28ead2b4df"
+  },
+  "output_hashes": {
+    "integrity_checks.csv": "13a87a175a1bdbce6cd5e358e23f53a9ca4aeb8f6c405a5391cd60f11234453e",
+    "mopt_target_range_assessment.csv": "b2f2af3a37bb7788a508fcdf19c2d90bc60a8d0e970956561256cfa633b0541d",
+    "mopt_threshold_bootstrap_diagnostics.csv": "6625b2d859ee73248d883e3ce0871e71543eec0be5c983f681e2c3098c2e58ff",
+    "mopt_threshold_cell_summary.csv": "fe6422c5d4493bd0a2e337a5b16ede0a580803c17b78c9dc445395909eeb1643",
+    "mopt_threshold_estimates.csv": "b60799c08d12516b28a429ab49de7485265105bafe7b61c221aa56563e58e23b",
+    "mopt_threshold_feasibility.png": "328a1a4a76d27e2925204cf19fe77ee8f1c9817eb402600c24732637cd2ecbea",
+    "mopt_threshold_run_level.csv": "ab3f19502fe0fc01b910eba10b00478427403d9ec38258cef0db3ec38498a871",
+    "mopt_threshold_structural_models.csv": "810a5f1231f273bacd77a138e34ae583fb90c1053afd16516b6e37219683c2e4",
+    "publication_mopt_threshold_feasibility.md": "f3b3b5346dd2f39f68d6fc7cbeb642abcbdde4909be68379c8a2843dfeb8a3c1"
+  },
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "numpy": "2.3.5",
+    "pandas": "3.0.1"
+  },
+  "integrity_checks": [
+    {
+      "check": "sha256:publication_final_statistical_analysis_specification_v1.0.md",
+      "status": "PASS",
+      "detail": "0fee90c74eb0160a579f945dab5d7d46ebb8e1f2254171e3c4a515426d40b461"
+    },
+    {
+      "check": "sha256:publication_final_statistical_analysis_specification_v1.0.yaml",
+      "status": "PASS",
+      "detail": "c399b574389603eb0516164ed1aba8cbeda9e2c80880c1cf5f90eb28b8a009ae"
+    },
+    {
+      "check": "sha256:publication_canonical_run_manifest.csv",
+      "status": "PASS",
+      "detail": "afaf04a6231035a1df4397a73d2f1cf45cf3271dbca18b001eb41f0b1f6830e2"
+    },
+    {
+      "check": "sha256:metrics_ingestion.csv",
+      "status": "PASS",
+      "detail": "237c3eb716e75d36ed71ffeb91d30bb706a47cf40ba03a9827083f8bb5dfaf52"
+    },
+    {
+      "check": "sha256:query_metrics.csv",
+      "status": "PASS",
+      "detail": "6bc776a1948b3b29fed5648a80d195b6aa87d3b13208afc27f45ba7a7cdec043"
+    },
+    {
+      "check": "sha256:compaction_operation_metrics.csv",
+      "status": "PASS",
+      "detail": "d80265f4ce5062376ebfc0bf192144a9315fa1868790e81008efa8e2cf3b871f"
+    },
+    {
+      "check": "sha256:metrics_ingestion.csv",
+      "status": "PASS",
+      "detail": "6c3c46d2047f32376c4a6cb489f70ee607644f07a428fd76e5c47f0e0399b07d"
+    },
+    {
+      "check": "sha256:query_metrics.csv",
+      "status": "PASS",
+      "detail": "240a8b1f71ba62591689f1425c32262696566581539187880af45ecd5080a345"
+    },
+    {
+      "check": "sha256:compaction_operation_metrics.csv",
+      "status": "PASS",
+      "detail": "b267a59b994bd6a7654ce2bfbb6d7a147a37f01922691c804b182ed743294e79"
+    },
+    {
+      "check": "sha256:metrics_ingestion_phases_reconstruction_quality.csv",
+      "status": "PASS",
+      "detail": "deb3d2ed4e258684f46ec8aa589ade44318de7f3300c6e0d0b04bc28ead2b4df"
+    },
+    {
+      "check": "csv_width:publication_canonical_run_manifest.csv",
+      "status": "PASS",
+      "detail": "rows=72;fields=34"
+    },
+    {
+      "check": "csv_width:metrics_ingestion.csv",
+      "status": "PASS",
+      "detail": "rows=60234;fields=82"
+    },
+    {
+      "check": "csv_width:query_metrics.csv",
+      "status": "PASS",
+      "detail": "rows=1296;fields=45"
+    },
+    {
+      "check": "csv_width:compaction_operation_metrics.csv",
+      "status": "PASS",
+      "detail": "rows=72;fields=47"
+    },
+    {
+      "check": "csv_width:metrics_ingestion.csv",
+      "status": "PASS",
+      "detail": "rows=60234;fields=82"
+    },
+    {
+      "check": "csv_width:query_metrics.csv",
+      "status": "PASS",
+      "detail": "rows=1296;fields=45"
+    },
+    {
+      "check": "csv_width:compaction_operation_metrics.csv",
+      "status": "PASS",
+      "detail": "rows=36;fields=47"
+    },
+    {
+      "check": "csv_width:metrics_ingestion_phases_reconstruction_quality.csv",
+      "status": "PASS",
+      "detail": "rows=36;fields=46"
+    },
+    {
+      "check": "canonical_run_count",
+      "status": "PASS",
+      "detail": "72 unique runs"
+    },
+    {
+      "check": "factorial_coverage",
+      "status": "PASS",
+      "detail": "2 formats x 4 SF x 3 MOPT x 3 reps"
+    },
+    {
+      "check": "resource_profile",
+      "status": "PASS",
+      "detail": "5 executors; 80 cores in all runs"
+    },
+    {
+      "check": "canonical_B10",
+      "status": "PASS",
+      "detail": "B10_delta320_r01_store_sales_sf500_mopt160000_20260912_130358Z;B10_delta320_r02_store_sales_sf500_mopt160000_20260927_162301Z;B10_delta320_r03_store_sales_sf500_mopt160000_20260926_033819Z;B10_r01_store_sales_sf500_mopt160000_20260828_163243Z;B10_r02_store_sales_sf500_mopt160000_20260902_042804Z;B10_r03_store_sales_sf500_mopt160000_20260903_044849Z"
+    },
+    {
+      "check": "query_integrity:iceberg",
+      "status": "PASS",
+      "detail": "1296 rows; 648 measured; three repetitions/group; result hashes paired"
+    },
+    {
+      "check": "maintenance_integrity:iceberg",
+      "status": "PASS",
+      "detail": "expected operation sequence for 36 runs: rewrite_data_files,rewrite_manifests"
+    },
+    {
+      "check": "n_minus_1_and_resources:iceberg",
+      "status": "PASS",
+      "detail": "36/36 runs have one terminal row absent and 5 executors/80 cores"
+    },
+    {
+      "check": "query_integrity:delta",
+      "status": "PASS",
+      "detail": "1296 rows; 648 measured; three repetitions/group; result hashes paired"
+    },
+    {
+      "check": "maintenance_integrity:delta",
+      "status": "PASS",
+      "detail": "expected operation sequence for 36 runs: optimize"
+    },
+    {
+      "check": "n_minus_1_and_resources:delta",
+      "status": "PASS",
+      "detail": "36/36 runs have one terminal row absent and 5 executors/80 cores"
+    },
+    {
+      "check": "delta_phase_reconstruction_quality",
+      "status": "PASS",
+      "detail": "36/36 PASS_WITH_KNOWN_N_MINUS_1"
+    },
+    {
+      "check": "threshold_endpoint_mapping",
+      "status": "PASS",
+      "detail": "72/72 pre/post native-maintenance file-size observations mapped"
+    },
+    {
+      "check": "threshold_factorial_coverage",
+      "status": "PASS",
+      "detail": "2 formats x 4 SF x 3 MOPT x 3 physical runs"
+    },
+    {
+      "check": "threshold_B10_mapping",
+      "status": "PASS",
+      "detail": "validated canonical B10 reruns present"
+    },
+    {
+      "check": "threshold_model_coverage",
+      "status": "PASS",
+      "detail": "separate structural fit over 36 canonical runs per format"
+    },
+    {
+      "check": "threshold_bootstrap",
+      "status": "PASS",
+      "detail": "10000 stratified draws; seed 20261025"
+    },
+    {
+      "check": "threshold_target_roles",
+      "status": "PASS",
+      "detail": "Iceberg native/common 512 MiB; Delta common 512 MiB and native 1 GiB"
+    }
+  ]
+}

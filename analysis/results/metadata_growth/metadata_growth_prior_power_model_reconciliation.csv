@@ -1,0 +1,3 @@
+table_format,prior_analysis_unit,prior_sf_fixed_effects,prior_reported_exponent,exactly_reproduced_exponent,absolute_reproduction_difference
+iceberg,12_SF_MOPT_scenario_means,False,1.874732889279489,1.8747328892794812,7.771561172376096e-15
+delta,12_SF_MOPT_scenario_means,False,1.7343046399194524,1.7343046399194417,1.0658141036401503e-14

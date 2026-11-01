@@ -1,0 +1,28 @@
+{
+  "method_version": "publication_query_break_even_v1_1_boundary_amendment",
+  "generated_at_utc": "2026-10-30T16:16:11.471970Z",
+  "decision": "Iceberg full maintenance sequence primary; rewrite_data_files-only sensitivity",
+  "statistical_change": "none; role reclassification of validated v1.0 rows",
+  "source_files": {
+    "analysis_run_manifest.json": "c0d94a78ec2d8009818a7dc84d1fd002c37e6c762db44d2451d24f14051ef4b6",
+    "iceberg_manifest_rewrite_sensitivity.png": "02840245aa56c1f54bc37ffe6f414a0760d820470f3782f5d5cb472a6579861b",
+    "integrity_checks.csv": "2731956332c71551269ea051fec3a0826220ecaf3643b0ac580eb07a4f9293d0",
+    "publication_query_break_even_results.md": "cd1d90bd77e63c2a19da05ba19b3503a772d8ed00e1a5d08da4aab8d8004029b",
+    "query_break_even_bootstrap_diagnostics.csv": "e4e83409ee31edebabf2f2a04f0adca044e0ecea3f1895fd3448160fb9895c27",
+    "query_break_even_cell_results.csv": "898c93bc3e90ee82e8dc64f00d327c18f4c1886ad9adbf6a53ff7bdf11cbbc8c",
+    "query_break_even_iceberg_sensitivity_results.csv": "88fd0ba794eef25fb0da1b4f459be92184f2f967295c41128a848a45d94e114d",
+    "query_break_even_primary_heatmap.png": "ac41dd44836d1d17eb8c1255a670905a1395f241bd4ffca01e3fef9a6d672b91",
+    "query_break_even_primary_results.csv": "b8c2c23f53493e52511fe57121849022f47d82ea243e9fc26fb5f4fbd7b48ddd",
+    "query_break_even_run_level.csv": "8ed77b5eadb045f417e5386ce24d8bd41fc633de50912cddf0958b4163347ad7"
+  },
+  "output_files": {
+    "figure_05_temporal_break_even_v1.1.png": "3e1f58829e2f9f95392ea3d262aca9f3eaf37d91063f0fbb146895a7590172a8",
+    "figure_05_temporal_break_even_v1.1.svg": "69a257fd90ad442cf16c435b6e37b5cb7018e4264f713f54aded2a1684821cbf",
+    "publication_query_break_even_boundary_amendment_v1.1.md": "aae43ed1479289962580f5f711450e928d61d7a23760b2e0ec1cce48624ae75d",
+    "query_break_even_b11_example_v1_1.csv": "bed764ff3625aa03b97092d53ce17a8480fe3183d0d8240867022c47b6dee7e3",
+    "query_break_even_cell_results_v1_1.csv": "7f671118321cf454fa217ad3e559971e285b7b76e29b4db1315f0ffc88f80670",
+    "query_break_even_iceberg_data_file_only_sensitivity_v1_1.csv": "4e6226b11b018f6d7590030cd6a594b12ff1328f2d01a3303ba3bd757a973876",
+    "query_break_even_primary_results_v1_1.csv": "e8692c55f87db3e0746f958b3f5eaa2bd292d4f0850a5228c5fd9bed11f73558",
+    "query_break_even_table8_summary_v1_1.csv": "979d6377cea9db164588485ee02020b0541dc94dd02a25d6b7d044dbf681a32e"
+  }
+}

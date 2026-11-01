@@ -1,0 +1,73 @@
+specification:
+  id: publication_final_statistical_analysis_v1_0
+  status: locked_before_final_result_calculation
+  date: '2026-10-25'
+  alpha: 0.05
+  bootstrap:
+    seed: 20261025
+    draws: 10000
+    unit: physical_ingestion_run
+    strata: [table_format, scale_factor, mopt]
+    draws_per_stratum: 3
+    preserve_together: [pre_post_phases, query_ids, measured_repetitions]
+    interval_primary: bca_95
+    minimum_finite_draws: 9500
+    fallback: percentile_2_5_97_5
+    otherwise: ci_not_estimable
+  canonical_manifest:
+    path: publication_canonical_run_manifest.csv
+    sha256: afaf04a6231035a1df4397a73d2f1cf45cf3271dbca18b001eb41f0b1f6830e2
+    required_runs: 72
+    runs_per_format: 36
+    required_validation_status: VALIDATED_CANONICAL
+    required_included_value: true
+  query_analysis:
+    primary_queries: [Q2, Q3]
+    secondary_queries: [Q1]
+    phases: [pre_compaction, post_compaction]
+    warmups_in_per_group: 3
+    measured_in_per_group: 3
+    primary_aggregation: arithmetic_mean_raw_ms_then_log2
+    sensitivity_aggregation: median_raw_ms_then_log2
+    central_regressor: log2_mopt_over_160000
+    sf_control: categorical_fixed_effects
+    phase_by_sf_interaction: true
+    model_by_format: true
+    cluster: physical_ingestion_run
+    primary_test: phase_by_log2_mopt_interaction_equals_zero_two_sided
+    multiplicity:
+      method: holm
+      family: [iceberg_Q2, iceberg_Q3, delta_Q2, delta_Q3]
+      familywise_alpha: 0.05
+    neutralization: 1_minus_abs_beta_post_over_abs_beta_pre
+    numeric_near_zero: 1.0e-8
+    stable_sign_fraction_required: 0.95
+    cache_primary: include_all_canonical_runs
+    cache_sensitivity: warm_cache_only
+  break_even:
+    saving_ms: mean_pre_minus_mean_post
+    ratio: mean_maintenance_wall_time_ms_over_mean_saving_ms
+    require_positive_cell_mean_saving: true
+    iceberg_primary_operation: rewrite_data_files
+    iceberg_sensitivity_operations: [rewrite_data_files, rewrite_manifests]
+    delta_primary_operation: optimize
+  retained_metadata:
+    primary_endpoint: metadata_total_size_mib_before
+    secondary_endpoint: metadata_file_count_before
+    central_regressor: log2_completed_ingestion_commits
+    sf_control: categorical_fixed_effects
+    interpretation: retained_metadata_footprint_only
+  conditional_mopt_threshold:
+    common_target_mib: 512
+    native_target_mib:
+      iceberg: 512
+      delta: 1024
+    output_partitions: 12
+    claim_boundary: conditional_engineering_threshold_not_universal_optimum
+  prohibited:
+    - independent_microbatch_or_query_replication_inference
+    - claim_of_equal_cache_state
+    - active_metadata_interpretation
+    - pure_historical_commit_time_interpretation
+    - universal_mopt_optimum
+    - retrospective_preregistration_claim
